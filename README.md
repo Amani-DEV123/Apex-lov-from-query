@@ -15,7 +15,7 @@ It allows you to generate a reusable search-enabled LOV directly from SQL using 
 
 ## Demo
 
-![Demo](images/video.gif)
+![Demo](video.gif)
 
 ## Usage
 
