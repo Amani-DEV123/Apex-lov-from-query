@@ -1,17 +1,26 @@
-# Apex-lov-from-query
+# Apex Search LOV From Query
 
-Apex Search LOV From Query is a lightweight searchable LOV component for Oracle APEX.
+A lightweight, reusable searchable LOV component for Oracle APEX, built from scratch using PL/SQL, JavaScript, and CSS.
 
-It allows you to generate a reusable search-enabled LOV directly from SQL using the `get_search_lov` function, without requiring any APEX plug-ins.
+This project introduces the `get_search_lov` function, allowing developers to generate a fully functional searchable List of Values (LOV) directly from a SQL query. The component automatically renders the required HTML and provides the JavaScript and CSS behavior, eliminating the need to rebuild the same UI for every page.
+
+The component is powered by:
+- PL/SQL (HTML generation)
+- JavaScript (search, selection, dropdown behavior)
+- CSS (styling and user interface)
+
+It is designed to be lightweight, reusable, and easy to integrate into Oracle APEX applications.
 
 ## Features
 
+- Generate a searchable LOV directly from a SQL query
 - Search while typing
-- Pure SQL function
-- No plugin required
-- Lightweight
-- Works in Interactive Report
-- Reusable
+- Pure PL/SQL API
+- No external APEX plug-ins required
+- Lightweight and reusable
+- Works with Interactive Reports
+- Automatic HTML generation
+- Built-in JavaScript and CSS behavior
 
 ## Demo
 
@@ -22,7 +31,7 @@ It allows you to generate a reusable search-enabled LOV directly from SQL using 
 ```sql
 SELECT
     employee_name,
-    Apex_lov_query(
+    get_search_lov(
         department_id,
         q'[
             SELECT department_id,
