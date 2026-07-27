@@ -2,7 +2,7 @@
 
 A lightweight, reusable searchable LOV component for Oracle APEX, built from scratch using PL/SQL, JavaScript, and CSS.
 
-This project introduces the `get_search_lov` function, allowing developers to generate a fully functional searchable List of Values (LOV) directly from a SQL query. The component automatically renders the required HTML and provides the JavaScript and CSS behavior, eliminating the need to rebuild the same UI for every page.
+This project introduces the `Ax_lov_quey` function, allowing developers to generate a fully functional searchable List of Values (LOV) directly from a SQL query. The component automatically renders the required HTML and provides the JavaScript and CSS behavior, eliminating the need to rebuild the same UI for every page.
 
 The component is powered by:
 - PL/SQL (HTML generation)
@@ -31,7 +31,7 @@ It is designed to be lightweight, reusable, and easy to integrate into Oracle AP
 ```sql
 SELECT
     employee_name,
-    get_search_lov(
+    Ax_lov_quey(
         department_id,
         q'[
             SELECT department_id,
