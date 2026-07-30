@@ -2,25 +2,24 @@
 
 A lightweight, reusable searchable LOV component for Oracle APEX, built from scratch using PL/SQL, JavaScript, and CSS.
 
-This project introduces the `Ax_lov_quey` function, allowing developers to generate a fully functional searchable List of Values (LOV) directly from a SQL query. The component automatically renders the required HTML and provides the JavaScript and CSS behavior, eliminating the need to rebuild the same UI for every page.
+## Why this component?
 
-The component is powered by:
-- PL/SQL (HTML generation)
-- JavaScript (search, selection, dropdown behavior)
-- CSS (styling and user interface)
+Oracle APEX provides built-in LOV page items such as **Select List from Query**, but they cannot be embedded directly inside an Interactive Report with built-in search functionality.
 
-It is designed to be lightweight, reusable, and easy to integrate into Oracle APEX applications.
+This component fills that gap by providing a reusable PL/SQL function that creates a searchable dropdown inside an Interactive Report from any SQL query.
+
+The function displays a **Display Value** to the user while returning the corresponding **Return Value**, matching the behavior of Oracle APEX LOV items.
 
 ## Features
 
-- Generate a searchable LOV directly from a SQL query
-- Search while typing
-- Pure PL/SQL API
-- No external APEX plug-ins required
-- Lightweight and reusable
-- Works with Interactive Reports
-- Automatic HTML generation
-- Built-in JavaScript and CSS behavior
+* Adds a searchable LOV to Interactive Reports.
+* Accepts any SQL query as the data source.
+* Displays a Display Value while returning a Return Value.
+* Search while typing.
+* Automatic HTML generation using PL/SQL.
+* Built-in JavaScript and CSS behavior.
+* No external Oracle APEX plug-ins required.
+* Lightweight and reusable.
 
 ## Demo
 
