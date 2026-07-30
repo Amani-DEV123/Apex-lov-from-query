@@ -30,7 +30,7 @@ The function displays a **Display Value** to the user while returning the corres
 ```sql
 SELECT
     employee_name,
-    Ax_lov_quey(
+    Ax_lov_query(
         department_id,
         q'[
             SELECT department_id,
